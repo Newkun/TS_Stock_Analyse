@@ -113,6 +113,8 @@ print('市净率为：', plus3.loc[0, '市净率'])
 print('扣非净利润增长率/市盈率：', plus3.loc[0, '扣非净利润增长率/市盈率'])
 print()
 
+plus3.fillna(0, inplace=True)
+
 print('公司2019年的财务数据：')
 print('加权平均净资产收益率(%)：', plus3.loc[0, '加权平均净资产收益率(%)'], end='    ')
 if plus3.loc[0, '加权平均净资产收益率(%)'] < 15:
@@ -163,5 +165,4 @@ print()
 
 # 6.获取前十大股东质押数据
 print('\n前十大股东质押数据：')
-a = TS计算大股东质押率.get_pledgeHolders10(ts_code, '20200331')
-print('\n', a)
+TS计算大股东质押率.get_pledgeHolders10(ts_code, '20200331')
