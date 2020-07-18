@@ -97,7 +97,7 @@ pd_plusDate.index = list(range(3))        # 修改索引，以便后续查找
 
 
 # 3.求最新的股价、市盈率等
-pd_price = ts.pro_bar(ts_code=ts_code, start_date='20200624', end_date='20200624', adj='qfq',
+pd_price = ts.pro_bar(ts_code=ts_code, start_date='20200706', end_date='20200706', adj='qfq',
                     factors=['tor', 'vr'])        # 本接口不需要用pro.pro_bar
 pd_price.columns = ['交易日期', 'ts_code', '开盘价', '最高价', '最低价', '收盘价', '昨收价', '涨跌额', '涨跌幅 ', '成交量（手）', '成交额（千元）',
                     '换手率', '量比']
