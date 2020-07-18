@@ -61,7 +61,7 @@ pd_balance.columns = ['ts_code', '报告期', '报表类型', '公司类型', '�
                       '更新标识']
 
 
-pd_price = ts.pro_bar(ts_code=ts_code, start_date='20200619', end_date='20200619', adj='qfq',
+pd_price = ts.pro_bar(ts_code=ts_code, start_date='20200706', end_date='20200706', adj='qfq',
                      factors=['tor', 'vr'])        # 本接口不需要用pro.pro_bar
 
 pd_price.columns = ['交易日期', 'ts_code', '开盘价', '最高价', '最低价', '收盘价', '昨收价', '涨跌额', '涨跌幅 ', '成交量（手）', '成交额（千元）',
